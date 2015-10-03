@@ -1,0 +1,30 @@
+<% if @issues.present? %>
+    <div class="panel-body">
+      <table class="table table-bordered issue_list">
+        <thead>
+        <tr>
+          <th>Category</th>
+          <th>Language</th>
+          <th>Title</th>
+          <th colspan="3"></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @issues.each do |issue| %>
+            <tr>
+              <td><%= issue.category.name %></td>
+              <td><%= issue.language.name %></td>
+              <td><%= link_to issue.title, issue %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+      <br>
+
+    </div>
+<% else %>
+    <h1>Thera is no issues</h1>
+<% end %>
+
+

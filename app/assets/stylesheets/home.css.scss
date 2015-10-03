@@ -1,0 +1,105 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content-wrapper {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.page-top-title {
+  border-bottom: 2px solid #ffac30;
+  font-family: "Anonymous Pro","Inconsolata","Menlo","Consolas","Bitstream Vera Sans Mono","Courier New",monospace;
+  font-size: 30px;
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.content{
+  width:100%;
+  margin: auto;
+  padding: auto;
+}
+
+.issue{
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  width: 68%;
+}
+
+.solution{
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  min-height: 283px;
+  border-radius: 5px;
+}
+
+.search{
+  float: left;
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #CCCCCC;
+  min-height: 283px;
+  border-radius: 5px;
+}
+
+.signup .field{
+  padding: 10px;
+}
+.login .field{
+  padding: 10px;
+}
+
+.signup .actions{
+  float: right;
+  padding-right: 10px;
+}
+
+.login .actions{
+  float: right;
+  padding-right: 10px;
+}
+
+.or_div{
+  float: left;
+  min-height: 283px;
+  width:0px;
+  border: 1px solid #CCCCCC;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.line_top{
+  border-right: 2px solid #CCCCCC;
+  height: 125px;
+  margin-right: 14px;
+}
+
+.mid_circle{
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+  height: 30px;
+  padding: 3px;
+  position: absolute;
+  right: -15px;
+  top: calc(50% - 15px);
+  width: 30px;
+}
+
+.list_solution {
+  border: 1px solid #cccccc;
+  margin: 10px 10px 32px;
+  padding: 19px;
+}
+
+.solution-list{
+  list-style: none;
+}
+

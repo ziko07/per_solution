@@ -1,0 +1,29 @@
+<%= form_for(@issue) do |f| %>
+  <% if @issue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
+
+      <ul>
+      <% @issue.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.select(:category_id, Category.all.collect {|u| [u.name, u.id]},{},:class => 'form-control', :prompt => 'Select') %>
+  </div>
+  <div class="field">
+    <%= f.label :language_id %><br>
+    <%= f.select(:language_id, Language.all.collect {|u| [u.name, u.id]},{},:class => 'form-control', :prompt => 'Select') %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_area :title ,:class => 'form-control'%>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
