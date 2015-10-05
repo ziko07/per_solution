@@ -30,6 +30,7 @@
   float: left;
   margin-right: 15px;
   width: 68%;
+  min-height: 286px;
 }
 
 .solution{
@@ -101,5 +102,13 @@
 
 .solution-list{
   list-style: none;
+}
+
+.credential {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  width: 49%;
 }
 

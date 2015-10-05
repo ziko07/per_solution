@@ -8,7 +8,6 @@
       <%= link_to 'New Issue', new_issue_path %>
     </div>
   </div>
-</div>
 <div class="search panel panel-default">
   <div class="panel-heading">Search
   </div>
@@ -30,6 +29,66 @@
   </div>
 
 </div>
+
+<div class="credential panel panel-default">
+  <div class="panel-heading"> Listing Credential
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered issue_list">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Public Key</th>
+        <th>secrate Key</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @credentials.each do |credential| %>
+          <tr>
+            <td><%= credential.name %></td>
+            <td><%= credential.public_key%></td>
+            <td><%= credential.secrate_key%></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <br>
+
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+
+<div class="credential panel panel-default">
+  <div class="panel-heading"> Listing Requirement
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered issue_list">
+      <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Requirement</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @requirements.each do |requirement| %>
+          <tr>
+            <td><%= requirement.project_name %></td>
+            <td><%= requirement.requirement%></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <br>
+
+  </div>
+  <div class="panel-footer">
+  </div>
+</div>
+</div>
+
 
 
 

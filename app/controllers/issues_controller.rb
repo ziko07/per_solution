@@ -1,6 +1,8 @@
 class IssuesController < ApplicationController
   def index
     @issues = Issue.all
+    @credentials = Credential.all
+    @requirements = Requirement.all
   end
 
   def new
