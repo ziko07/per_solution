@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="content">
   <div class="issue panel panel-default">
-    <div class="panel-heading"> Listing Issues
+    <div class="panel-heading header-text"> Listing Issues
     </div>
     <%= render :partial => 'issue_list' %>
     <div class="panel-footer">
@@ -9,7 +9,7 @@
     </div>
   </div>
 <div class="search panel panel-default">
-  <div class="panel-heading">Search
+  <div class="panel-heading header-text">Search
   </div>
   <div class="panel-body">
     <%= form_tag("/issue_search", method: "get", remote: true) do %>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="credential panel panel-default">
-  <div class="panel-heading"> Listing Credential
+  <div class="panel-heading header-text"> Listing Credential
   </div>
   <div class="panel-body">
     <table class="table table-bordered issue_list">
@@ -61,7 +61,7 @@
 </div>
 
 <div class="credential panel panel-default">
-  <div class="panel-heading"> Listing Requirement
+  <div class="panel-heading header-text"> Listing Requirement
   </div>
   <div class="panel-body">
     <table class="table table-bordered issue_list">

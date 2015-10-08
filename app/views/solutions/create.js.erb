@@ -1,1 +1,1 @@
-$('.solution-list').find('li').last().after('<li class="list_solution"><%= @solution.description %></li>');
+$('.solution-list').find('li').last().after('<li class="list_solution"><%= escape_javascript simple_format(@solution.description)%></li>');

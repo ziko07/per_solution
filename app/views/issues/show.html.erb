@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <div class="solution panel panel-default">
-  <div class="panel-heading"><%= @issue.title %>
+  <div class="panel-heading header-text"><b><%= @issue.title %></b>
   </div>
   <div class="panel-body">
     <% if @issue.solutions.present? %>
     <ul class="solution-list">
       <% @issue.solutions.each do |solution| %>
       <li class="list_solution">
-        <%= solution.description %>
+        <%= simple_format(solution.description) %>
       </li>
       <% end %>
     </ul>
@@ -19,7 +19,7 @@
     <%= form_tag("/solutions", method: "post", remote: true) do %>
         <div class="form-group">
           <%= hidden_field_tag 'issue_id', @issue.id %>
-          <%= text_area_tag 'description',nil,class:'form-control', required: true,  placeholder: "Your Comment" %>
+          <%= text_area_tag 'description',nil,class:'form-control', required: true,size: "25x15",  placeholder: "Your Comment" %>
         </div>
           <%= submit_tag "Post Solution", class: "btn btn-primary" %>
         </div>
