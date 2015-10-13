@@ -36,7 +36,7 @@ class IssuesController < ApplicationController
   end
 
   def issue_search
-    @issues = Issue.where(:category_id => params["category"], :language_id => params["language"])
+    @issues = Issue.where(category_id: params['category'], language_id: params['language'])
     puts(@issues.inspect)
   end
 
