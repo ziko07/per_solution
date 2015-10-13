@@ -1,0 +1,38 @@
+var perSolution = angular.module('perSolution', ['ui.router', 'templates', 'ngResource', 'ngSanitize']).run(['$http', function ($http) {
+    //$http.defaults.headers.common['Accept'] = 'application/json';
+    //$http.defaults.headers.common['Content-Type'] = 'application/json';
+}]);
+
+perSolution.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $stateProvider
+        .state("/issues/:id",
+        {
+            url: '/issues/:id',
+            templateUrl: "<%= asset_path('issues/show.html') %> ",
+            controller: "issuesShowCtrl"
+        })
+        .state("/contacts/:id",
+        {
+            templateUrl: "<%#= asset_path('contacts/show.html') %> ",
+            controller: "ContactsShowCtrl"
+        })
+        .state("/contacts/:id/edit",
+        {
+            templateUrl: "<%#= asset_path('contacts/edit.html') %> ",
+            controller: "ContactsEditCtrl"
+        }).state('otherwise', {
+                templateUrl:'<%= asset_path('issues/index.html') %>',
+                url: '/',
+                controller: "issueCtrl"
+        });
+
+    $locationProvider.html5Mode({
+        enabled: true
+    });
+});
+
+perSolution.config([
+    "$httpProvider", function($httpProvider) {
+        $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
+    }
+]);

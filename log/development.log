@@ -23748,3 +23748,1970 @@ Processing by IssuesController#index as JSON
   [1m[35mCategory Load (0.2ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
   [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
 Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-13 20:06:43 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (1.5ms)
+  Rendered shared/_global_header.html.erb (0.8ms)
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (17.4ms)
+Completed 200 OK in 6508ms (Views: 6470.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/issues.self-90efc58477537dcf0d4d94f835370883fb10d920ddff30103490a0c1e1cf8394.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/solutions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/app.self-857ef4928eea1abef649cefc9af1c2c1f4d4ce7b7946d135f3411dc8f6240cff.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/issue_controller.self-bd383cca95de9c85eba7a400c4ebf772679338e52e9a0eb733aea70507ce6208.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 20:06:50 +0600
+
+
+Started GET "/assets/issues/index-8b9161ba865c728d7f76d5c3d04decd4122ef05509afd26000ee7c7b037a8872.html" for 127.0.0.1 at 2015-10-13 20:06:52 +0600
+
+
+Started GET "/issues.json" for 127.0.0.1 at 2015-10-13 20:06:52 +0600
+Processing by IssuesController#index as JSON
+  [1m[35mIssue Load (0.3ms)[0m  SELECT `issues`.* FROM `issues`
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+Completed 200 OK in 58ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/issues/show-3c9d1e136f6ea1f3704dc0a52b9611f3b2d7863b2e9714c0ff099ef1ade92847.html" for 127.0.0.1 at 2015-10-13 20:07:02 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 20:07:02 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.3ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.3ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 65ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=3.2.1" for 127.0.0.1 at 2015-10-13 20:07:02 +0600
+
+
+Started POST "/issues/1/solutions.json" for 127.0.0.1 at 2015-10-13 20:14:01 +0600
+Processing by SolutionsController#create as JSON
+  Parameters: {"solution"=>{"description"=>"<table>\n  <thead>\n    <tr>\n      <th>Issue</th>\n      <th>Description</th>\n      <th colspan=\"3\"></th>\n    </tr>\n  </thead>\n\n  <tbody>\n    <% @solutions.each do |solution| %>\n      <tr>\n        <td><%= solution.issue_id %></td>\n        <td><%= solution.description %></td>\n        <td><%= link_to 'Show', solution %></td>\n        <td><%= link_to 'Edit', edit_solution_path(solution) %></td>\n        <td><%= link_to 'Destroy', solution, method: :delete, data: { confirm: 'Are you sure?' } %></td>\n      </tr>\n    <% end %>\n  </tbody>\n</table>"}, "issue_id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `solutions` (`description`, `issue_id`, `created_at`, `updated_at`) VALUES ('<table>\n  <thead>\n    <tr>\n      <th>Issue</th>\n      <th>Description</th>\n      <th colspan=\"3\"></th>\n    </tr>\n  </thead>\n\n  <tbody>\n    <% @solutions.each do |solution| %>\n      <tr>\n        <td><%= solution.issue_id %></td>\n        <td><%= solution.description %></td>\n        <td><%= link_to \'Show\', solution %></td>\n        <td><%= link_to \'Edit\', edit_solution_path(solution) %></td>\n        <td><%= link_to \'Destroy\', solution, method: :delete, data: { confirm: \'Are you sure?\' } %></td>\n      </tr>\n    <% end %>\n  </tbody>\n</table>', 1, '2015-10-13 14:14:01', '2015-10-13 14:14:01')[0m
+  [1m[35m (57.2ms)[0m  COMMIT
+Completed 200 OK in 97ms (Views: 0.5ms | ActiveRecord: 57.7ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 20:23:44 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.5ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+  Rendered issues/show.html.erb within layouts/application (53.5ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered shared/_filter.html.erb (2.1ms)
+Completed 200 OK in 982ms (Views: 979.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/app.self-d2584f45d45347cbe2437d7ad9aadc4f72b68e91db8477fa6b63a59c56ec9909.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/bootstrap.self-689e7654c15471af5fb82ca53c328498f5325dd64f5fb6511309d9944954bd51.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/issues.self-90efc58477537dcf0d4d94f835370883fb10d920ddff30103490a0c1e1cf8394.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/solutions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:45 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin/application.self-a3af293ab9b99c4cc3bdde3420d9ab58f52b9fe9ceb1dfad2d517a81e6c15cf8.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/issue_controller.self-bd383cca95de9c85eba7a400c4ebf772679338e52e9a0eb733aea70507ce6208.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 20:23:46 +0600
+
+
+Started GET "/assets/issues/show-647f6469042281f303384d243b505f7b8a7dab7ea7714f967f1ab3dfe1923637.html" for 127.0.0.1 at 2015-10-13 20:23:47 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 20:23:47 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.1ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 20:26:12 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.3ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+  Rendered issues/show.html.erb within layouts/application (13.3ms)
+  Rendered shared/_global_header.html.erb (0.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered shared/_filter.html.erb (1.9ms)
+Completed 200 OK in 927ms (Views: 924.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/app.self-b435a8a47b96fd205ce96150d2709e7ce36f8300b4f2c22666879e3f41303a21.js?body=1" for 127.0.0.1 at 2015-10-13 20:26:14 +0600
+
+
+Started GET "/assets/issues/show-74f0eca881b6628ebbda07b32e410526d6ec1bb9c0341405e80265630c7a36e4.html" for 127.0.0.1 at 2015-10-13 20:26:15 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 20:26:15 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.2ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 20:36:00 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.2ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+  Rendered issues/show.html.erb within layouts/application (14.1ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered shared/_filter.html.erb (2.1ms)
+Completed 200 OK in 958ms (Views: 955.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/app.self-d82010b4514c6a7f3659621572ebac3a723ccf6ea3bb10fa5e32eb64763da4a3.js?body=1" for 127.0.0.1 at 2015-10-13 20:36:01 +0600
+
+
+Started GET "/assets/issue_controller.self-1fb5862f89aaaf1de6c60cf5e011a75d3ddaa892c7fc9af62223ce9150ed2723.js?body=1" for 127.0.0.1 at 2015-10-13 20:36:01 +0600
+
+
+Started GET "/assets/issues/show-3a32ed2eb2e512cf28754c705017a019706f536e765f6fa2d6e5cc9e6697b568.html" for 127.0.0.1 at 2015-10-13 20:36:02 +0600
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 20:36:54 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.2ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+  Rendered issues/show.html.erb within layouts/application (14.6ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered shared/_filter.html.erb (1.8ms)
+Completed 200 OK in 928ms (Views: 924.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/app.self-349d8b4db85c8b7db499c029401f15c9b7bccae5ef0e7495efdb0cb3bb27f2a5.js?body=1" for 127.0.0.1 at 2015-10-13 20:36:55 +0600
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 20:41:48 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.1ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+  Rendered issues/show.html.erb within layouts/application (7.9ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered shared/_filter.html.erb (1.7ms)
+Completed 200 OK in 933ms (Views: 931.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/angular-sanitize.self-9d3097d8d40d36b6dddb8cbd93dac9590cf7a950b3826c34baa6f1628b98c04d.js?body=1" for 127.0.0.1 at 2015-10-13 20:41:49 +0600
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 20:44:31 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.2ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+  Rendered issues/show.html.erb within layouts/application (11.8ms)
+  Rendered shared/_global_header.html.erb (0.1ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered shared/_filter.html.erb (2.3ms)
+Completed 200 OK in 924ms (Views: 921.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/issue_controller.self-f3450723da3595065e1d224c3963e1fe39951889aabae0656d031009b4ec09bd.js?body=1" for 127.0.0.1 at 2015-10-13 20:44:32 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 20:44:34 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.1ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:11:03 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.1ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+  Rendered issues/show.html.erb within layouts/application (6.5ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT `languages`.* FROM `languages`
+  Rendered shared/_filter.html.erb (1.7ms)
+Completed 200 OK in 878ms (Views: 876.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/app.self-cd85b4a2c415d134d57d5eab78c2e78d8fc2476c69d30760bc3aa56c87936ad1.js?body=1" for 127.0.0.1 at 2015-10-13 21:11:05 +0600
+
+
+Started GET "/assets/issues/show-f181582d4fbac9957cf0ddcc4d862b9b3a0ad8d83af74046f2dcc16b235100de.html" for 127.0.0.1 at 2015-10-13 21:11:06 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:11:06 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.1ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.1ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/issues/index-c540b582e5bd395d3811497ee5cc6a059b291e12b32977dadcc521165127e6fd.html" for 127.0.0.1 at 2015-10-13 21:16:19 +0600
+
+
+Started GET "/issues.json" for 127.0.0.1 at 2015-10-13 21:16:19 +0600
+Processing by IssuesController#index as JSON
+  [1m[36mIssue Load (2.3ms)[0m  [1mSELECT `issues`.* FROM `issues`[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:16:21 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:16:25 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.3ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (8.0ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.2ms)
+Completed 200 OK in 966ms (Views: 963.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/bootstrap.self-689e7654c15471af5fb82ca53c328498f5325dd64f5fb6511309d9944954bd51.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/issues.self-90efc58477537dcf0d4d94f835370883fb10d920ddff30103490a0c1e1cf8394.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/solutions.self-ae67ba312af0d47b87b2cdde8f32142ff913d89c27bc322fc21ae6f216207b28.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:26 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin/application.self-a3af293ab9b99c4cc3bdde3420d9ab58f52b9fe9ceb1dfad2d517a81e6c15cf8.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/angular-sanitize.self-9d3097d8d40d36b6dddb8cbd93dac9590cf7a950b3826c34baa6f1628b98c04d.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/app.self-d69b146dfc16aef4002b1ff8d1aea877a9822c89c18215d063cce25344c9e8a9.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/issue_controller.self-f3450723da3595065e1d224c3963e1fe39951889aabae0656d031009b4ec09bd.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 21:16:27 +0600
+
+
+Started GET "/assets/issues/show-581e7b8f08b7a038260de9a35d06e86be13944301ca0b504223c401d530bcadc.html" for 127.0.0.1 at 2015-10-13 21:16:28 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:16:28 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:16:48 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (9.1ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (1.9ms)
+Completed 200 OK in 496ms (Views: 493.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/solutions.self-42f0baf2dbf4e52d93fa95054c58f4aee622759f5817016c2a440a448a5a6595.css?body=1" for 127.0.0.1 at 2015-10-13 21:16:49 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:16:51 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:26:17 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.3ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (13.2ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (1.9ms)
+Completed 200 OK in 480ms (Views: 477.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/bootstrap.self-689e7654c15471af5fb82ca53c328498f5325dd64f5fb6511309d9944954bd51.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/issues.self-90efc58477537dcf0d4d94f835370883fb10d920ddff30103490a0c1e1cf8394.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/solutions.self-ad43c10ed2f82849bb80352f03f850000f7b10996e76e7f11ce2d2fc932f7bfa.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin/application.self-a3af293ab9b99c4cc3bdde3420d9ab58f52b9fe9ceb1dfad2d517a81e6c15cf8.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/angular-sanitize.self-9d3097d8d40d36b6dddb8cbd93dac9590cf7a950b3826c34baa6f1628b98c04d.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/app.self-d69b146dfc16aef4002b1ff8d1aea877a9822c89c18215d063cce25344c9e8a9.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/issue_controller.self-f3450723da3595065e1d224c3963e1fe39951889aabae0656d031009b4ec09bd.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 21:26:18 +0600
+
+
+Started GET "/assets/issues/show-581e7b8f08b7a038260de9a35d06e86be13944301ca0b504223c401d530bcadc.html" for 127.0.0.1 at 2015-10-13 21:26:20 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:26:20 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/issues/1/solutions.json" for 127.0.0.1 at 2015-10-13 21:26:49 +0600
+Processing by SolutionsController#create as JSON
+  Parameters: {"solution"=>{"description"=>"If you want to use CDN resources without download go to https://code.angularjs.org/ and click on version you want .Will find all the various resources available there and then you can copy location straight into script tag:"}, "issue_id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `solutions` (`description`, `issue_id`, `created_at`, `updated_at`) VALUES ('If you want to use CDN resources without download go to https://code.angularjs.org/ and click on version you want .Will find all the various resources available there and then you can copy location straight into script tag:', 1, '2015-10-13 15:26:49', '2015-10-13 15:26:49')
+  [1m[36m (67.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 74ms (Views: 0.5ms | ActiveRecord: 67.9ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:27:22 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.5ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (14.6ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.0ms)
+Completed 200 OK in 506ms (Views: 502.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/solutions.self-9ff1046c5e8d1f80d46cf349a9d9915f9a4165d7f93e167b79dde8d45d81c243.css?body=1" for 127.0.0.1 at 2015-10-13 21:27:23 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:27:25 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:28:31 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (8.3ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.0ms)
+Completed 200 OK in 450ms (Views: 447.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/bootstrap.self-689e7654c15471af5fb82ca53c328498f5325dd64f5fb6511309d9944954bd51.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/issues.self-4035caad7e81a136e707c530c8884bad95bc87dbb54c7b2aceab4fa9d4496f3f.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/solutions.self-9ff1046c5e8d1f80d46cf349a9d9915f9a4165d7f93e167b79dde8d45d81c243.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin/application.self-a3af293ab9b99c4cc3bdde3420d9ab58f52b9fe9ceb1dfad2d517a81e6c15cf8.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/angular-sanitize.self-9d3097d8d40d36b6dddb8cbd93dac9590cf7a950b3826c34baa6f1628b98c04d.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/app.self-d69b146dfc16aef4002b1ff8d1aea877a9822c89c18215d063cce25344c9e8a9.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/issue_controller.self-f3450723da3595065e1d224c3963e1fe39951889aabae0656d031009b4ec09bd.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 21:28:32 +0600
+
+
+Started GET "/assets/issues/show-581e7b8f08b7a038260de9a35d06e86be13944301ca0b504223c401d530bcadc.html" for 127.0.0.1 at 2015-10-13 21:28:34 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:28:34 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:29:07 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (12.3ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.6ms)
+Completed 200 OK in 454ms (Views: 452.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/solutions.self-c48c8982f1a9d3d47162f4d950a2d67b83adbeab9d475487a07f7eec634bd0db.css?body=1" for 127.0.0.1 at 2015-10-13 21:29:08 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:29:09 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:29:32 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (6.4ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (1.7ms)
+Completed 200 OK in 464ms (Views: 462.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/solutions.self-8fb33d6057af97bd22d26696ff6e98751ee279f2d82d0812d7e52c40b3945b70.css?body=1" for 127.0.0.1 at 2015-10-13 21:29:33 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:29:34 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:31:00 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (8.2ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.0ms)
+Completed 200 OK in 489ms (Views: 487.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/solutions.self-b18bb9ca7e569d83d5cc05193a7e71b0330fc22b5c9f6080c3cf80af383e8922.css?body=1" for 127.0.0.1 at 2015-10-13 21:31:01 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:31:03 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:31:42 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (10.4ms)
+  Rendered shared/_global_header.html.erb (0.3ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (1.7ms)
+Completed 200 OK in 478ms (Views: 476.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/solutions.self-f2877d029f1ef4197ddf2d601d5c593524c402ef1461d84d92353313b7609d2a.css?body=1" for 127.0.0.1 at 2015-10-13 21:31:43 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:31:45 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:32:20 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (10.6ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.0ms)
+Completed 200 OK in 464ms (Views: 461.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/solutions.self-a0327551e627391bdfa6b89c8236322f15cc6e5d893d3ececaeccf965372bb9d.css?body=1" for 127.0.0.1 at 2015-10-13 21:32:20 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:32:22 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:41:42 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (8.3ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.1ms)
+Completed 200 OK in 958ms (Views: 955.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/app.self-95f2be96baa67cfb38801ce1fd30563b82532f73d3b8d1970d86193e345dec23.js?body=1" for 127.0.0.1 at 2015-10-13 21:41:43 +0600
+
+
+Started GET "/assets/issues/show-a865bd5f74224ee4cf72e6a411ee864fc37a8d9e5df049407070c016e9b20388.html" for 127.0.0.1 at 2015-10-13 21:41:45 +0600
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:41:58 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.3ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (13.4ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.0ms)
+Completed 200 OK in 928ms (Views: 925.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/bootstrap.self-689e7654c15471af5fb82ca53c328498f5325dd64f5fb6511309d9944954bd51.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/issues.self-4035caad7e81a136e707c530c8884bad95bc87dbb54c7b2aceab4fa9d4496f3f.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/solutions.self-a0327551e627391bdfa6b89c8236322f15cc6e5d893d3ececaeccf965372bb9d.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin/application.self-a3af293ab9b99c4cc3bdde3420d9ab58f52b9fe9ceb1dfad2d517a81e6c15cf8.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/angular-sanitize.self-9d3097d8d40d36b6dddb8cbd93dac9590cf7a950b3826c34baa6f1628b98c04d.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/app.self-1470c7193e43df026cc54c73eb4ffe1fc69696f87dddcf184a2b27fce68767ce.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/issue_controller.self-f3450723da3595065e1d224c3963e1fe39951889aabae0656d031009b4ec09bd.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 21:42:00 +0600
+
+
+Started GET "/assets/issues/show-3ecc76929d825925e038efdde2d769d1c88a2d73e9149a86b5ca72b6b5d3ee17.html" for 127.0.0.1 at 2015-10-13 21:42:02 +0600
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:44:17 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.3ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (14.9ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.2ms)
+Completed 200 OK in 907ms (Views: 902.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/bootstrap.self-689e7654c15471af5fb82ca53c328498f5325dd64f5fb6511309d9944954bd51.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/issues.self-4035caad7e81a136e707c530c8884bad95bc87dbb54c7b2aceab4fa9d4496f3f.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/solutions.self-a0327551e627391bdfa6b89c8236322f15cc6e5d893d3ececaeccf965372bb9d.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:18 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin/application.self-a3af293ab9b99c4cc3bdde3420d9ab58f52b9fe9ceb1dfad2d517a81e6c15cf8.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/angular-sanitize.self-9d3097d8d40d36b6dddb8cbd93dac9590cf7a950b3826c34baa6f1628b98c04d.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/app.self-131a309f1097ee981112c129b14a30cb4a3c7b33b422f09b93a7df17522c16b9.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/issue_controller.self-f3450723da3595065e1d224c3963e1fe39951889aabae0656d031009b4ec09bd.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:19 +0600
+
+
+Started GET "/assets/issues/show-09425696767713f5254aced5378dc8061cb61938f4788b85b4ffb0b81db765d8.html" for 127.0.0.1 at 2015-10-13 21:44:20 +0600
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=3.2.1" for 127.0.0.1 at 2015-10-13 21:44:21 +0600
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 21:44:58 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (7.8ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.3ms)
+Completed 200 OK in 895ms (Views: 892.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/app.self-f63b25c70b0ea2ed63a0d2cf75845ed18f213a840d84df821f6b5f4713d5943c.js?body=1" for 127.0.0.1 at 2015-10-13 21:44:59 +0600
+
+
+Started GET "/assets/issues/show-fa3d8a46e7f4c54760eb6edf201aab11800e825dab625f2e0b70c4922a0c6547.html" for 127.0.0.1 at 2015-10-13 21:45:02 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 21:45:02 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 22:03:18 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (9.5ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (1.8ms)
+Completed 200 OK in 917ms (Views: 915.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/app.self-8a7c3efc1c11889136db5dc8d36b75b258518772800ba775bb989508b50c319a.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/bootstrap-theme.self-da97211954ed2b8b62404bc9cc0b49a54ae151433ad14ed27cbc5ca0a9083074.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/bootstrap-theme.min.self-52a404808aa0cf060a8e5cadc44e887c75d7b5d54af9b2d52658f303f1952da0.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/bootstrap.self-689e7654c15471af5fb82ca53c328498f5325dd64f5fb6511309d9944954bd51.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/bootstrap.min.self-94a1a0c70f5e8c6d260d8587c75baa13831818633705acb249aad33b4bb44ca0.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/home.self-07dd086449de9d79dabdf98f3c435150ea243d442c38e3d9082ade219f0211e0.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/fontwasome.min.self-90ce7926a7e24f086a3ce6ca7c22c822e468d8d1780ae51010c16878446b24dd.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/issues.self-4035caad7e81a136e707c530c8884bad95bc87dbb54c7b2aceab4fa9d4496f3f.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/public.self-30edea7a06a1065bb7ae1000db7d310d4d880400951e1a4cc3fee15fab3ae2cd.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/requirements.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/solutions.self-a0327551e627391bdfa6b89c8236322f15cc6e5d893d3ececaeccf965372bb9d.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:19 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/angular.self-5657ace19fa32e4720c470d98deb20d67d0bd0221bdf5a4b447ab31e8249a65b.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/angular-ui-router.self-97fbd3badc5dfaa870a9d24e091915c8317c6ebc39a7cddbdfe6cee1f3193405.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/angular-router.self-f8388c1925ee025637dbff2c4ac3ee7bd216435d89c49ab2200c30f689278134.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/angular-rails-templates.self-0cb4b19debc640ed69cbcf42939a1289977dedf73a8d318f2db162b1f2834920.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/angular-resource.self-a4e7c0b1340d51bfee058d57bf1158ae624372339c3ba2d0f09d9c606a2d37d1.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin/application.self-a3af293ab9b99c4cc3bdde3420d9ab58f52b9fe9ceb1dfad2d517a81e6c15cf8.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/angular-sanitize.self-9d3097d8d40d36b6dddb8cbd93dac9590cf7a950b3826c34baa6f1628b98c04d.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/bootstrap.self-7a778c88152d7ccdc6183756f33a11648e945ac0c010e098051b150bda71b23a.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/bootstrap.min.self-69902af4d8baf7b2507e8058687abbf427b0aae02da04257494a43c80e664b11.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/issue_controller.self-f3450723da3595065e1d224c3963e1fe39951889aabae0656d031009b4ec09bd.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/issues.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/requirements.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/solutions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for 127.0.0.1 at 2015-10-13 22:03:20 +0600
+
+
+Started GET "/assets/issues/show-f57a9141926b065a01a4ebdd37646061e23e32445b3eaee636a4dab1e561be81.html" for 127.0.0.1 at 2015-10-13 22:03:22 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 22:03:22 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 22:13:27 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (7.9ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (1.9ms)
+Completed 200 OK in 1008ms (Views: 1006.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/issue_controller.self-20fd01bccc18f64dd5ca718639780908a56178129e0953040b79590aa0d30c29.js?body=1" for 127.0.0.1 at 2015-10-13 22:13:29 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 22:13:31 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 22:14:02 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (10.9ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.0ms)
+Completed 200 OK in 931ms (Views: 928.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/issue_controller.self-8b4b585c443cfcb2d62f6bafd51c8d775073e66d3b5627c915ab4b1c1605cbf5.js?body=1" for 127.0.0.1 at 2015-10-13 22:14:03 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 22:14:05 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/issues/1/solutions.json" for 127.0.0.1 at 2015-10-13 22:53:23 +0600
+Processing by SolutionsController#create as JSON
+  Parameters: {"solution"=>{"description"=>""}, "issue_id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `solutions` (`description`, `issue_id`, `created_at`, `updated_at`) VALUES ('', 1, '2015-10-13 16:53:23', '2015-10-13 16:53:23')
+  [1m[36m (99.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 107ms (Views: 1.1ms | ActiveRecord: 100.2ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 22:54:48 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.3ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (12.2ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.7ms)
+Completed 200 OK in 950ms (Views: 947.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/app.self-a9c2568a9437701c0a631de9bb04b05bf16310daa9427bae501a15880bd6db48.js?body=1" for 127.0.0.1 at 2015-10-13 22:54:50 +0600
+
+
+Started GET "/assets/issues/show-07ea3cdc06a2403580a4ee3d5a893583bc81cbebc92da45a683fb00c0a868690.html" for 127.0.0.1 at 2015-10-13 22:54:52 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 22:54:52 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 23:08:15 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.2ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (8.0ms)
+  Rendered shared/_global_header.html.erb (0.3ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (2.5ms)
+Completed 200 OK in 1139ms (Views: 1137.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/app.self-0662010df80e383f8f83304c5cf490fa89bd339aaed21ccca8407d05f281e956.js?body=1" for 127.0.0.1 at 2015-10-13 23:08:17 +0600
+
+
+Started GET "/assets/issue_controller.self-d4c1868bd1db1826561cf7f8a19dc017e113a792b4b61213de8e4d773a22274e.js?body=1" for 127.0.0.1 at 2015-10-13 23:08:17 +0600
+
+
+Started GET "/assets/issues/show-996a957f93e57f7aa9830f93fccd1f200b8b5580cc014d0edb12cb0c44c8198b.html" for 127.0.0.1 at 2015-10-13 23:08:20 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 23:08:21 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1" for 127.0.0.1 at 2015-10-13 23:09:30 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.1ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+  Rendered issues/show.html.erb within layouts/application (7.8ms)
+  Rendered shared/_global_header.html.erb (0.2ms)
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (1.8ms)
+Completed 200 OK in 1016ms (Views: 1014.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/issue_controller.self-d6c3ea6a24ef7d70564c610e88f78a61e3eaaef231ac54f66791b79b39d4e870.js?body=1" for 127.0.0.1 at 2015-10-13 23:09:31 +0600
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 23:09:34 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.5ms)

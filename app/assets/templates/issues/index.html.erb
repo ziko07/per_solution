@@ -1,0 +1,30 @@
+<div class="panel-default">
+  <div class="panel-heading public-title">
+    Listing Issues
+  </div>
+</div>
+<div>
+  <table class="table table-bordered issue_list">
+    <thead>
+    <tr>
+      <th>Category</th>
+      <th>Language</th>
+      <th>Title</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="issue in issues">
+      <td>
+        {{ issue.category.name }}
+      </td>
+      <td>
+        {{ issue.language.name }}
+      </td>
+      <td>
+        <a ng-href="/issues/{{ issue.id }}" data-no-turbolink> {{issue.title}} </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,3 +1,17 @@
 // Place all the styles related to the solutions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.solution-item {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: solid 1px rgba(150, 150, 150, 0.2);
+  .solution-context {
+    padding-right: 20px;
+    line-height: 25px;
+  }
+  .edit-solution {
+    position: absolute;
+    top: 14px;
+    right: 0;
+  }
+}
