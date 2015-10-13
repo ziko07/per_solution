@@ -6,7 +6,7 @@
   float: left;
   width: 100%;
   position: relative;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .page-top-title {
@@ -41,9 +41,6 @@
 }
 
 .search{
-  float: left;
-  display: inline-block;
-  width: 30%;
   border: 1px solid #CCCCCC;
   min-height: 283px;
   border-radius: 5px;
@@ -100,7 +97,7 @@
   padding: 19px;
 }
 
-.solution-list{
+.solution-list {
   list-style: none;
 }
 

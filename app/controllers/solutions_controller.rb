@@ -24,7 +24,16 @@ class SolutionsController < ApplicationController
   # POST /solutions
   # POST /solutions.json
   def create
-  @solution = Solution.create(:issue_id => params["issue_id"], :description => params["description"])
+    issue = Issue.find_by_id(params[:issue_id])
+    solution = issue.solutions.build(solution_params)
+    respond_to do |format|
+      if solution.save
+        format.json {
+          render :json => solution
+        }
+        format.html {}
+      end
+    end
   end
 
   # PATCH/PUT /solutions/1
@@ -52,8 +61,8 @@ class SolutionsController < ApplicationController
   end
 
   private
-    # Never trust parameters from the scary internet, only allow the white list through.
-  # def solution_params
-  #   params.require(:solution).permit(:issue_id, :description)
-  # end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def solution_params
+    params.require(:solution).permit(:issue_id, :description)
+  end
 end

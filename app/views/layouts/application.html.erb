@@ -2,26 +2,27 @@
 <html>
 <head>
   <title>PerSolution</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <base href="/">
 </head>
-<body>
+<body ng-app="perSolution">
 
+<%= render 'shared/global_header' %>
 
 <div class="content-wrapper">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav menu-ul">
-          <li class="active"><a href="/">home </a></li>
-        </ul>
-        </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  <%= yield %>
+  <div class="content">
+    <div class="col-lg-12 no-padding">
+      <div class="col-lg-8">
+        <div class="main-view-container" ui-view></div>
+      </div>
+      <div class="col-lg-4">
+        <%= render 'shared/filter' %>
+      </div>
+    </div>
+  </div>
+  <%#= yield %>
 </div>
 
 </body>

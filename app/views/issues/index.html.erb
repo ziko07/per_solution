@@ -1,95 +1,18 @@
-<p id="notice"><%= notice %></p>
-<div class="content">
-  <div class="issue panel panel-default">
-    <div class="panel-heading header-text"> Listing Issues
-    </div>
-    <%= render :partial => 'issue_list' %>
-    <div class="panel-footer">
-      <%= link_to 'New Issue', new_issue_path %>
-    </div>
-  </div>
-<div class="search panel panel-default">
-  <div class="panel-heading header-text">Search
-  </div>
-  <div class="panel-body">
-    <%= form_tag("/issue_search", method: "get", remote: true) do %>
-        <div class="form-group">
-          <%= label_tag(:category_id, "Category",class: "control-label" ) %>
-          <%= select_tag "category", options_from_collection_for_select(Category.all, "id", "name"), class: "form-control", :prompt => 'Select' %>
-        </div>
-        <div class="form-group">
-          <%= label_tag(:language_id, "Expire Year",class: "control-label" ) %>
-          <%= select_tag "language", options_from_collection_for_select(Language.all, "id", "name"), class: "form-control", :prompt => 'Select' %>
-        </div>
-        <div class="form-group">
-          <%= submit_tag "Search", class: "btn btn-primary" %>
-        </div>
-
-    <% end %>
-  </div>
-
-</div>
-
-<div class="credential panel panel-default">
-  <div class="panel-heading header-text"> Listing Credential
-  </div>
-  <div class="panel-body">
-    <table class="table table-bordered issue_list">
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Public Key</th>
-        <th>secrate Key</th>
-      </tr>
-      </thead>
-
-      <tbody>
-      <% @credentials.each do |credential| %>
-          <tr>
-            <td><%= credential.name %></td>
-            <td><%= credential.public_key%></td>
-            <td><%= credential.secrate_key%></td>
-          </tr>
-      <% end %>
-      </tbody>
-    </table>
-    <br>
-
-  </div>
-  <div class="panel-footer">
-  </div>
-</div>
-
-<div class="credential panel panel-default">
-  <div class="panel-heading header-text"> Listing Requirement
-  </div>
-  <div class="panel-body">
-    <table class="table table-bordered issue_list">
-      <thead>
-      <tr>
-        <th>Project Name</th>
-        <th>Requirement</th>
-      </tr>
-      </thead>
-
-      <tbody>
-      <% @requirements.each do |requirement| %>
-          <tr>
-            <td><%= requirement.project_name %></td>
-            <td><%= requirement.requirement%></td>
-          </tr>
-      <% end %>
-      </tbody>
-    </table>
-    <br>
-
-  </div>
-  <div class="panel-footer">
-  </div>
-</div>
-</div>
-
-
-
+<!--<div class="content">-->
+  <!--<div class="col-lg-12 no-padding">-->
+    <!--<div class="col-lg-8">-->
+      <!--<div class="panel-default">-->
+        <!--<div class="panel-heading public-title">-->
+          <!--Listing Issues-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="main-view-container"></div>-->
+      <!--<%#= render :partial => 'issue_list' %>-->
+    <!--</div>-->
+    <!--<div class="col-lg-4">-->
+      <!--<%#= render 'shared/filter' %>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
 
 

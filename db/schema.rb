@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151003075732) do
+ActiveRecord::Schema.define(version: 20151005050256) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -52,6 +52,14 @@ ActiveRecord::Schema.define(version: 20151003075732) do
     t.datetime "updated_at",             null: false
   end
 
+  create_table "credentials", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "public_key",  limit: 255
+    t.string   "secrate_key", limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
   create_table "issues", force: :cascade do |t|
     t.integer  "category_id", limit: 4
     t.integer  "language_id", limit: 4
@@ -64,6 +72,13 @@ ActiveRecord::Schema.define(version: 20151003075732) do
     t.string   "name",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+  end
+
+  create_table "requirements", force: :cascade do |t|
+    t.string   "project_name", limit: 255
+    t.text     "requirement",  limit: 65535
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   create_table "solutions", force: :cascade do |t|

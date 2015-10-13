@@ -20,6 +20,12 @@ module PerSolution
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+     config.angular_templates.module_name    = 'templates'
+     config.angular_templates.ignore_prefix  = %w(templates/)
+     config.angular_templates.inside_paths   = [Rails.root.join('app', 'assets')]
+    # config.angular_templates.markups        = %w(erb str haml slim md)
+     config.angular_templates.htmlcompressor = false
+
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
