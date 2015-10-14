@@ -25715,3 +25715,92 @@ Processing by IssuesController#show as JSON
   [1m[35mLanguage Load (0.1ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
   [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
 Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues.json" for 127.0.0.1 at 2015-10-13 23:12:25 +0600
+Processing by IssuesController#index as JSON
+  [1m[35mIssue Load (0.1ms)[0m  SELECT `issues`.* FROM `issues`
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 23:12:27 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.1ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/issues.json" for 127.0.0.1 at 2015-10-13 23:12:28 +0600
+Processing by IssuesController#index as JSON
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT `issues`.* FROM `issues`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 23:12:30 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mIssue Load (0.2ms)[0m  SELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+  [1m[36mSolution Load (0.1ms)[0m  [1mSELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues.json" for 127.0.0.1 at 2015-10-13 23:12:31 +0600
+Processing by IssuesController#index as JSON
+  [1m[35mIssue Load (0.3ms)[0m  SELECT `issues`.* FROM `issues`
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-13 23:12:32 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.2ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.1ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-14 23:06:15 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_global_header.html.erb (1.1ms)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mLanguage Load (0.6ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+  Rendered shared/_filter.html.erb (26.2ms)
+Completed 200 OK in 2379ms (Views: 2319.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/issue_controller.self-f087d33f594d29c875d1fa4a7eec599941aab900e95c9f942f5373e59ad6c929.js?body=1" for 127.0.0.1 at 2015-10-14 23:06:18 +0600
+
+
+Started GET "/issues.json" for 127.0.0.1 at 2015-10-14 23:06:19 +0600
+Processing by IssuesController#index as JSON
+  [1m[35mIssue Load (0.3ms)[0m  SELECT `issues`.* FROM `issues`
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.5ms)[0m  SELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1
+Completed 200 OK in 53ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/issues/1.json" for 127.0.0.1 at 2015-10-14 23:06:22 +0600
+Processing by IssuesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mIssue Load (0.7ms)[0m  [1mSELECT  `issues`.* FROM `issues` WHERE `issues`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT  `languages`.* FROM `languages` WHERE `languages`.`id` = 1 LIMIT 1[0m
+  [1m[35mSolution Load (0.6ms)[0m  SELECT `solutions`.* FROM `solutions` WHERE `solutions`.`issue_id` = 1
+Completed 200 OK in 129ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=3.2.1" for 127.0.0.1 at 2015-10-14 23:06:23 +0600

@@ -1,11 +1,11 @@
-perSolution.controller('issueCtrl', function ($scope, $http, $location) {
+perSolution.controller('issueCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
     $http.get('/issues.json').success(function(response)
     {
         $scope.issues = response;
     });
-});
+}]);
 
-perSolution.controller('issuesShowCtrl', function ($scope, $http, $stateParams, $filter, $sce) {
+perSolution.controller('issuesShowCtrl', ['$scope', '$http', '$stateParams', '$filter', '$sce', function ($scope, $http, $stateParams, $filter, $sce) {
     $scope.is_editable = false;
     $scope.solution_id = 0;
     $http.get('/issues/' + $stateParams.id + '.json').success(function(response)
@@ -45,4 +45,4 @@ perSolution.controller('issuesShowCtrl', function ($scope, $http, $stateParams, 
             $scope.solution = {description: ''};
         });
     };
-});
+}]);
