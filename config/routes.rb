@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :solutions
-  resources :issues
+
+  resources :issues do
+    resources :solutions
+  end
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
@@ -8,7 +10,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'issues#index'
+   root 'issues#index'
+  get "*path.html" => "issues#index", :layout => 0
+  get '*path' => 'issues#index'
   get 'issue_search' =>  'issues#issue_search'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
