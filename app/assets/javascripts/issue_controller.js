@@ -15,23 +15,33 @@ perSolution.controller('issuesShowCtrl', ['$scope', '$http', '$stateParams', '$f
     });
 
     $scope.edit_solution = function(id) {
+        if($scope.is_editable) {
+            $("#solution-" + $scope.solution_id).removeClass('active');
+        }
         var obj = $filter('filter')($scope.issue.solutions, {id: id })[0];
         $scope.solution = {description: obj.description};
         $scope.solution_id = obj.id;
         $scope.is_editable = true;
+        $("#solution-" + obj.id).addClass('active');
     };
 
     $scope.edit_cancel = function() {
         $scope.solution = {description: ''};
+        $("#solution-" + $scope.solution_id).removeClass('active');
         $scope.solution_id = 0;
         $scope.is_editable = false;
     };
 
     $scope.update_solution = function() {
         var obj = $filter('filter')($scope.issue.solutions, {id: $scope.solution_id })[0];
-        obj.description = $scope.solution.description;
-        $scope.solution = {description: ''};
-        $scope.is_editable = false;
+        var formData = {solution: $scope.solution};
+        $http.put("/issues/" + $stateParams.id + "/solutions/" + obj.id + ".json", JSON.stringify(formData)).success(function(response) {
+            obj.description = response.description;
+            $scope.solution = {description: ''};
+            $scope.is_editable = false;
+            $("#solution-" + $scope.solution_id).removeClass('active');
+            $scope.solution_id = 0;
+        });
     };
 
     $scope.html_safe = function(html_content) {

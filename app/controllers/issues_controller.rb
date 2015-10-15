@@ -27,6 +27,13 @@ class IssuesController < ApplicationController
   def destroy
   end
 
+  def search
+    @issue = Issue.all
+    respond_to do |format|
+      format.json { render json: @issue }
+    end
+  end
+
   def show
     @issue = Issue.find_by_id(params[:id])
     respond_to do |format|

@@ -2,7 +2,7 @@
   <div class="panel-heading header-text">Search
   </div>
   <div class="panel-body">
-    <%= form_tag("/issue_search", method: "get", remote: true) do %>
+    <%= form_tag("/search", method: "get", remote: true) do %>
         <div class="form-group">
           <%= label_tag(:q, "Free Text", class: "control-label") %>
           <%= text_field_tag :q, '', class: "form-control" %>

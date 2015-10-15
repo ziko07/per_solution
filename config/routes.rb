@@ -13,7 +13,7 @@ Rails.application.routes.draw do
    root 'issues#index'
   get "*path.html" => "issues#index", :layout => 0
   get '*path' => 'issues#index'
-  get 'issue_search' =>  'issues#issue_search'
+  get '/search' =>  'issues#search'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

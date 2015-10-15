@@ -5,26 +5,32 @@ var perSolution = angular.module('perSolution', ['ui.router', 'templates', 'ngRe
 
 perSolution.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
-        .state("/issues/:id",
-        {
-            url: '/issues/:id',
-            templateUrl: "<%= asset_path('issues/show.html') %> ",
-            controller: "issuesShowCtrl"
-        })
-        .state("/contacts/:id",
-        {
-            templateUrl: "<%#= asset_path('contacts/show.html') %> ",
-            controller: "ContactsShowCtrl"
-        })
-        .state("/contacts/:id/edit",
-        {
-            templateUrl: "<%#= asset_path('contacts/edit.html') %> ",
-            controller: "ContactsEditCtrl"
-        }).state('otherwise', {
-                templateUrl:'<%= asset_path('issues/index.html') %>',
+            .state("/issues/:id",
+            {
+                url: '/issues/:id',
+                templateUrl: "<%= asset_path('issues/show.html') %> ",
+                controller: "issuesShowCtrl"
+            })
+            .state("/search",
+            {
+                url: '/issues',
+                templateUrl: "<%= asset_path('issues/index.html') %> ",
+                controller: "searchCtrl"
+            })
+            .state("/contacts/:id",
+            {
+                templateUrl: "<%#= asset_path('contacts/show.html') %> ",
+                controller: "ContactsShowCtrl"
+            })
+            .state("/contacts/:id/edit",
+            {
+                templateUrl: "<%#= asset_path('contacts/edit.html') %> ",
+                controller: "ContactsEditCtrl"
+            }).state('otherwise', {
+                templateUrl: '<%= asset_path('issues/index.html') %>',
                 url: '/',
                 controller: "issueCtrl"
-        });
+            });
 
     $locationProvider.html5Mode({
         enabled: true
@@ -32,7 +38,7 @@ perSolution.config(function ($stateProvider, $urlRouterProvider, $locationProvid
 });
 
 perSolution.config([
-    "$httpProvider", function($httpProvider) {
+    "$httpProvider", function ($httpProvider) {
         $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
     }
 ]);

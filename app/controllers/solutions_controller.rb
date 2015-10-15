@@ -1,48 +1,39 @@
 class SolutionsController < ApplicationController
-  before_action :set_solution, only: [:show, :edit, :update, :destroy]
 
-  # GET /solutions
-  # GET /solutions.json
   def index
     @solutions = Solution.all
   end
 
-  # GET /solutions/1
-  # GET /solutions/1.json
   def show
   end
 
-  # GET /solutions/new
   def new
     @solution = Solution.new
   end
 
-  # GET /solutions/1/edit
   def edit
   end
 
-  # POST /solutions
-  # POST /solutions.json
   def create
     issue = Issue.find_by_id(params[:issue_id])
     solution = issue.solutions.build(solution_params)
     respond_to do |format|
       if solution.save
         format.json {
-          render :json => issue.solutions
+          render :json => solution
         }
         format.html {}
       end
     end
   end
 
-  # PATCH/PUT /solutions/1
-  # PATCH/PUT /solutions/1.json
   def update
+    issue = Issue.find_by_id(params[:issue_id])
+    solution = issue.solutions.find_by_id(params[:id])
     respond_to do |format|
-      if @solution.update(solution_params)
+      if solution.update(solution_params)
         format.html { redirect_to @solution, notice: 'Solution was successfully updated.' }
-        format.json { render :show, status: :ok, location: @solution }
+        format.json { render json: solution, status: :ok }
       else
         format.html { render :edit }
         format.json { render json: @solution.errors, status: :unprocessable_entity }
@@ -50,8 +41,6 @@ class SolutionsController < ApplicationController
     end
   end
 
-  # DELETE /solutions/1
-  # DELETE /solutions/1.json
   def destroy
     @solution.destroy
     respond_to do |format|

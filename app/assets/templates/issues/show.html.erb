@@ -5,7 +5,7 @@
 </div>
 
 <ul class="solution-list">
-  <li ng-repeat="solution in issue.solutions">
+  <li ng-repeat="solution in issue.solutions" id="solution-{{solution.id}}">
    <div class="solution-item">
      <div ng-bind-html="html_safe(solution.description)" class="solution-context"></div>
      <span class="pull-right">
