@@ -47,6 +47,10 @@ class IssuesController < ApplicationController
     puts(@issues.inspect)
   end
 
+  def unsubscribe_bounced
+    logger.info (params.inspect)
+  end
+
   private
 
   def layout_name

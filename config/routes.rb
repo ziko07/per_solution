@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get "*path.html" => "issues#index", :layout => 0
   get '*path' => 'issues#index'
   get '/search' =>  'issues#search'
+  post 'unsubscribe_bounced' => 'issues#unsubscribe_bounced'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
