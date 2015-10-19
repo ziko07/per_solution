@@ -1,0 +1,28 @@
+<div class="panel-default">
+  <div class="panel-heading public-title">
+    Post New Issue
+  </div>
+</div>
+
+<form>
+  <div class="form-group">
+    <label> Select Category </label>
+    <select ng-model="issue.category_id" ng-options="category.id as category.name for category in categories" class="form-control" id="select-category">
+
+    </select>
+  </div>
+  <div class="form-group">
+    <label> Select Language </label>
+    <select ng-model="issue.language_id" ng-options="language.id as language.name for language in languages" class="form-control" id="select-language">
+
+    </select>
+  </div>
+  <div class="form-group">
+    <label> Issue Text </label>
+    <textarea ng-model="issue.title" class="form-control"> </textarea>
+  </div>
+
+  <button type="submit" ng-click="post_issue()" class="btn btn-primary"> Post New Issue </button>
+  <button type="submit" ng-click="reset_form()" class="btn btn-warning"> Reset Form </button>
+  <a href="/" class="btn btn-primary"> Back Home </a>
+</form>

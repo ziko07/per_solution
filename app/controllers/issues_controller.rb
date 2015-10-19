@@ -11,11 +11,24 @@ class IssuesController < ApplicationController
 
   def new
     @issue = Issue.new
+    respond_to do |format|
+      format.json {
+        render json: {languages: Language.all, categories: Category.all}
+      }
+      format.html{}
+    end
   end
 
   def create
     @issue = Issue.create(issue_params)
-    redirect_to issues_url
+    respond_to do |format|
+      format.json {
+        render json: {status: true}
+      }
+      format.html {
+        redirect_to issues_url
+      }
+    end
   end
 
   def edit

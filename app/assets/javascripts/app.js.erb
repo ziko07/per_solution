@@ -5,6 +5,12 @@ var perSolution = angular.module('perSolution', ['ui.router', 'templates', 'ngRe
 
 perSolution.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
+            .state("/issues/new",
+            {
+                url: '/issues/new',
+                templateUrl: "<%= asset_path('issues/new.html') %> ",
+                controller: "issuesNewCtrl"
+            })
             .state("/issues/:id",
             {
                 url: '/issues/:id',
@@ -17,16 +23,12 @@ perSolution.config(function ($stateProvider, $urlRouterProvider, $locationProvid
                 templateUrl: "<%= asset_path('issues/index.html') %> ",
                 controller: "searchCtrl"
             })
-            .state("/contacts/:id",
-            {
-                templateUrl: "<%#= asset_path('contacts/show.html') %> ",
-                controller: "ContactsShowCtrl"
-            })
             .state("/contacts/:id/edit",
             {
                 templateUrl: "<%#= asset_path('contacts/edit.html') %> ",
                 controller: "ContactsEditCtrl"
-            }).state('otherwise', {
+            })
+            .state('otherwise', {
                 templateUrl: '<%= asset_path('issues/index.html') %>',
                 url: '/',
                 controller: "issueCtrl"
